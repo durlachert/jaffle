@@ -5,8 +5,7 @@ name: "jaffle_shop"
 version: "1.0.0"
 config-version: 2
 
-vars:
-  load_source_data: true
+
 
 # This setting configures which "profile" dbt uses for this project.
 profile: "default"
@@ -39,8 +38,7 @@ clean-targets: # directories to be removed by `dbt clean`
 seeds:
   jaffle_shop:
     +schema: raw
-    jaffle-data:
-      +enabled: "{{ var('load_source_data', false) }}"
+
 
 models:
   jaffle_shop:
