@@ -43,4 +43,4 @@ seeds:
 models:
   jaffle_shop:
     staging:
-      +materialized: view
+      +materialized: table
