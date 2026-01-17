@@ -10,7 +10,6 @@ renamed as (
 
     select
 
-        ----------  ids
         id as customer_id,
 
         ---------- text
